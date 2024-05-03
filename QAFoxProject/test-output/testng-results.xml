@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="9" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-03T22:03:23 IST" name="Selenium Test suite" finished-at="2024-05-03T22:03:30 IST" duration-ms="7463">
+    <groups>
+      <group name="functional">
+        <method signature="Project3.firefox(java.lang.String)[pri:0, instance:com.project.Project3@3349e9bb]" name="firefox" class="com.project.Project3"/>
+      </group> <!-- functional -->
+      <group name="regression">
+        <method signature="Project1.basicAuth()[pri:0, instance:com.project.Project1@4ec4f3a0]" name="basicAuth" class="com.project.Project1"/>
+        <method signature="Project2.sysout()[pri:2, instance:com.project.Project2@9597028]" name="sysout" class="com.project.Project2"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Project2.brokenLink()[pri:1, instance:com.project.Project2@3e58a80e]" name="brokenLink" class="com.project.Project2"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-05-03T22:03:23 IST" name="Testsuite2" finished-at="2024-05-03T22:03:23 IST" duration-ms="381">
+      <class name="com.project.Project2">
+        <test-method signature="sysout()[pri:2, instance:com.project.Project2@9597028]" started-at="2024-05-03T22:03:23 IST" name="sysout" description="automation2" finished-at="2024-05-03T22:03:23 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sysout -->
+      </class> <!-- com.project.Project2 -->
+      <class name="com.project.Project1">
+        <test-method signature="basicAuth()[pri:0, instance:com.project.Project1@4ec4f3a0]" started-at="2024-05-03T22:03:23 IST" name="basicAuth" description="automation1" finished-at="2024-05-03T22:03:23 IST" duration-ms="326" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.project.Project1.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.project.Project1.driver" is null
+at com.project.Project1.basicAuth(Project1.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicAuth -->
+      </class> <!-- com.project.Project1 -->
+    </test> <!-- Testsuite2 -->
+    <test started-at="2024-05-03T22:03:23 IST" name="Testsuite1" finished-at="2024-05-03T22:03:30 IST" duration-ms="7261">
+      <class name="com.project.Project2">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.project.Project2@3e58a80e]" started-at="2024-05-03T22:03:23 IST" name="launchbrowser" finished-at="2024-05-03T22:03:28 IST" duration-ms="5095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="brokenLink()[pri:1, instance:com.project.Project2@3e58a80e]" started-at="2024-05-03T22:03:28 IST" name="brokenLink" description="automation3" finished-at="2024-05-03T22:03:30 IST" duration-ms="2123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brokenLink -->
+      </class> <!-- com.project.Project2 -->
+    </test> <!-- Testsuite1 -->
+    <test started-at="2024-05-03T22:03:23 IST" name="Testsuite3" finished-at="2024-05-03T22:03:30 IST" duration-ms="7003">
+      <class name="com.project.Project3">
+        <test-method signature="firefox(java.lang.String)[pri:0, instance:com.project.Project3@3349e9bb]" started-at="2024-05-03T22:03:23 IST" name="firefox" finished-at="2024-05-03T22:03:30 IST" duration-ms="6994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+      </class> <!-- com.project.Project3 -->
+    </test> <!-- Testsuite3 -->
+  </suite> <!-- Selenium Test suite -->
+</testng-results>

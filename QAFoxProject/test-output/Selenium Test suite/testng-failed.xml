@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Selenium Test suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.project.ExampleListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Testsuite2(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+        <exclude name="functional"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.project.Project1">
+        <methods>
+          <include name="basicAuth"/>
+        </methods>
+      </class> <!-- com.project.Project1 -->
+    </classes>
+  </test> <!-- Testsuite2(failed) -->
+</suite> <!-- Failed suite [Selenium Test suite] -->
